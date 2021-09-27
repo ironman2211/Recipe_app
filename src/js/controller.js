@@ -74,11 +74,9 @@ const controlbookmark = function () {
 };
 const controlUplod = async function (data) {
   try {
-    console.log(data);
     await model.addRecipe(data);
   } catch (err) {
     addRecipeView.RenderError(err.message);
-    console.log(err);
   }
 };
 const test = function () {

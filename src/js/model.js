@@ -49,7 +49,6 @@ export const loadsearch = async function (query) {
       };
     });
   } catch (err) {
-    console.error(err);
     throw err;
   }
 };
